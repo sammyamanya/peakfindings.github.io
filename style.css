@@ -140,6 +140,10 @@
       margin: 40px 16px;
     }
   
+    .hero {
+        margin-bottom: 24px;
+    }
+
     .hero h1 {
       font-size: 2.1rem;
     }
@@ -152,4 +156,9 @@
     p {
       font-size: 1.1rem;
     }
+    
+    .button {
+        padding: 16px 30px;
+    }
+
   }
