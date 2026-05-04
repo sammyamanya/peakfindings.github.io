@@ -1,10 +1,18 @@
 :root {
+    /* Peak Findings brand colors */
+    --brand-primary: #0f4c81;
+    --brand-secondary: #1f7a8c;
+  
+    /* Neutrals */
     --text-primary: #111827;
     --text-secondary: #4b5563;
-    --accent: #2563eb;
     --bg-soft: #f9fafb;
     --border-light: #e5e7eb;
   }
+  
+  /* ======================
+     Base
+  ====================== */
   
   body {
     margin: 0;
@@ -13,6 +21,10 @@
     color: var(--text-primary);
     line-height: 1.7;
   }
+  
+  /* ======================
+     Layout
+  ====================== */
   
   .container {
     max-width: 760px;
@@ -24,16 +36,35 @@
     text-align: center;
   }
   
+  /* ======================
+     Hero / Header
+  ====================== */
+  
   .hero h1 {
     font-size: 2.6rem;
     margin-bottom: 10px;
+    color: var(--brand-primary);
   }
   
   .subtitle {
     font-size: 1.25rem;
-    color: var(--text-secondary);
+    color: var(--brand-secondary);
     margin-bottom: 40px;
   }
+  
+  /* ======================
+     Logo
+  ====================== */
+  
+  .logo {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* ======================
+     Content
+  ====================== */
   
   section {
     margin-bottom: 40px;
@@ -41,6 +72,7 @@
   
   h2 {
     font-size: 1.35rem;
+    font-weight: 600;
     margin-bottom: 12px;
   }
   
@@ -49,35 +81,58 @@
     font-size: 1.05rem;
   }
   
+  /* ======================
+     Lists
+  ====================== */
+  
   ul {
     list-style: none;
     padding: 0;
   }
   
   li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    color: var(--text-secondary);
   }
+  
+  /* ======================
+     Call to Action
+  ====================== */
   
   .button {
     display: inline-block;
     margin-top: 20px;
-    padding: 14px 26px;
-    background: var(--accent);
+    padding: 14px 28px;
+    background: var(--brand-primary);
     color: #ffffff;
     text-decoration: none;
     border-radius: 8px;
     font-weight: 500;
+    transition: background-color 0.2s ease;
   }
   
   .button:hover {
-    background: #1d4ed8;
+    background: var(--brand-secondary);
   }
+  
+  .button:focus {
+    outline: 3px solid rgba(31, 122, 140, 0.4);
+    outline-offset: 2px;
+  }
+  
+  /* ======================
+     Footer
+  ====================== */
   
   footer {
     margin-top: 48px;
     font-size: 0.9rem;
     color: #6b7280;
   }
+  
+  /* ======================
+     Mobile
+  ====================== */
   
   @media (max-width: 640px) {
     .container {
@@ -88,17 +143,13 @@
     .hero h1 {
       font-size: 2.1rem;
     }
-
-
-    .logo {
-        width: 100px;
-        margin-bottom: 16px;
-    }
-
-  }
-
-  .logo {
-    max-width: 180px;
-    height: auto;
-  }
   
+    .logo {
+      max-width: 100px;
+      margin-bottom: 16px;
+    }
+  
+    p {
+      font-size: 1.1rem;
+    }
+  }
