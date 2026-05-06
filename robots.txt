@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://peakfindings.github.io/sitemap.xml
