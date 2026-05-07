@@ -89,7 +89,7 @@
     </section>
 
     <section class="focus">
-      <h2>What We Do</h2>
+      <h2>What We Do:</h2>
 
       <h3>Monitoring, Evaluation and Learning (MEL)</h3>
       <h3>Data Collection, Management and Analysis</h3>
@@ -127,4 +127,22 @@
     </footer>
   </main>
 </body>
+
+<header id="sticky-header">
+  <img src="/assets/peak-findings-logo.png" alt="Peak Findings Ltd" />
+</header>
+
+<script>
+  const stickyHeader = document.getElementById('sticky-header');
+  const triggerHeight = 120;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > triggerHeight) {
+      stickyHeader.style.transform = 'translateY(0)';
+    } else {
+      stickyHeader.style.transform = 'translateY(-100%)';
+    }
+  });
+</script>
+
 </html>
