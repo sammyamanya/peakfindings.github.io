@@ -56,12 +56,17 @@
   /* ======================
      Hero / Header
   ====================== */
-  
+  .hero {
+    text-align: center;
+    padding: 3 rem 1.5rem;
+  }
+
   .hero h1 {
     font-size: 2.6rem;
     margin-bottom: 10px;
     color: var(--brand-primary);
     letter-spacing: -0.02em;
+    margin-top: 0;
   }
   
   .subtitle {
@@ -75,9 +80,12 @@
   ====================== */
   
   .logo {
-    max-width: 180px;
+    max-width: 240px; /* makes it clearly visible */
+    width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 0 auto 1.5rem; /* space below logo */
+    display: block;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.08));
   }
   
   /* ======================
