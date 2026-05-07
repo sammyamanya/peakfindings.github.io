@@ -81,9 +81,9 @@
   
   .logo {
     max-width: 240px; /* makes it clearly visible */
-    width: 100%;
+    max-width: 280px; /* allows it to scale on smaller screens */
     height: auto;
-    margin-bottom: 0 auto 1.5rem; /* space below logo */
+    margin-bottom: 2rem;
     display: block;
     filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.08));
   }
